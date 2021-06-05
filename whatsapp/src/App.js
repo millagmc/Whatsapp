@@ -1,17 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from './componentes/header/Header'
+import Header from './componentes/header/Header';
+import Main from './componentes/main/Main';
+import Navigation from './componentes/navigation/Navigation';
 
 function App() {
   return (
-    <div>
-      <Header/>
-      <div>corpo da mensagem </div>
-      <div>
-        <button>Usuario</button>
-        <input type='text'>Mensagem </input>
-        <button>Enviar</button>
-      </div>          
+    <div className='App'>
+      <div className='SidebarLeft'>
+        <Header/>
+        <Navigation/>
+      </div>
+      <div className='Main'>
+        <Main/>
+      </div>
     </div>
   );
 }
